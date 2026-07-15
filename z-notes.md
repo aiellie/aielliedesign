@@ -1,5 +1,5 @@
 git add .
-git commit -m "spinner"
+git commit -m "bot"
 git push origin main
 
 pnpm run build
