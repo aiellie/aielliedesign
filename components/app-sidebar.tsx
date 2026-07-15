@@ -4,7 +4,6 @@ import * as React from "react"
 
 import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
-import { NavSecondary } from "@/components/nav-secondary"
 import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
@@ -61,83 +60,6 @@ const data = {
       ),
     },
   ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: (
-        <HugeiconsIcon icon={Camera01Icon} strokeWidth={2} />
-      ),
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Proposal",
-      icon: (
-        <HugeiconsIcon icon={File01Icon} strokeWidth={2} />
-      ),
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: (
-        <HugeiconsIcon icon={File01Icon} strokeWidth={2} />
-      ),
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  navSecondary: [
-    {
-      title: "Settings",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={Settings05Icon} strokeWidth={2} />
-      ),
-    },
-    {
-      title: "Get Help",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={HelpCircleIcon} strokeWidth={2} />
-      ),
-    },
-    {
-      title: "Search",
-      url: "#",
-      icon: (
-        <HugeiconsIcon icon={SearchIcon} strokeWidth={2} />
-      ),
-    },
-  ],
   documents: [
     {
       name: "Data Library",
@@ -181,7 +103,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
