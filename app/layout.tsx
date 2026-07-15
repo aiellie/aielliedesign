@@ -4,11 +4,16 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'})
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400", "500"],
+})
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  weight: ["400", "500"],
 })
 
 export default function RootLayout({
